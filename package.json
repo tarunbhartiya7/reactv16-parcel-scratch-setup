@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx,css,html,json}\" ",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,html,json}\" ",
-    "lint": "eslint \"**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html"
   },
@@ -14,14 +14,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.13.0",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.17.0"
   },
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.8.6"
+    "@reach/router": "^1.2.1",
+    "react": "15.x || 16.x || 16.4.0-alpha.0911da3",
+    "react-dom": "15.x || 16.x || 16.4.0-alpha.0911da3"
   }
 }
